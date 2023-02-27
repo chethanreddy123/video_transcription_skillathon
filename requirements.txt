@@ -1,0 +1,7 @@
+gTTS==2.3.1
+gradio==3.19.1
+SpeechRecognition==3.9.0
+googletrans==3.0.0
+pprintpp==0.4.0
+moviepy==1.0.3
+streamlit==1.19.0
