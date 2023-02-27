@@ -90,14 +90,14 @@ if uploaded_file != None:
     st.video(uploaded_file)
     print(uploaded_file.getvalue())
     file = uploaded_file.read()
-    video_result = open(uploaded_file.name, 'wb')
+    video_result = open("sample.mp4", 'wb')
     video_result.write(file)
     video_result.write(file)
     video_result.close()
 
     Language = st.selectbox("Select the language", ["Hindi" , "Telugu","Italian" , "Spanish" , "Russian" , "German" , "Japanese"])
 
-    file = video_to_translate("obama.mp4","English",Language)
+    file = video_to_translate("sample.mp4","English",Language)
 
     if file:
         st.video(file)
